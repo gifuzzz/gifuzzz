@@ -21,9 +21,9 @@ export default function Whatiknow() {
             <li><FaLinux/>  Linux/Unix - Love the semplicity of the command line.</li>
             <li><FaPython/>  Python - My most used programming language. I&#39;ve been using it for robots, web crawling, web development, and cybersecurity related stuff.</li>
             <li><FaHtml5/>  Html | <FaCss3/>  CSS | <FaJsSquare/>  Javascript - For basic web development.</li>
-            <li><FaReact/>  ReactJS - For better web development. Furthermore, this website is made from srcatch with ReactJS and <a href="https://www.gatsbyjs.com/" target="_blank">GatsbyJS</a>.</li>
+            <li><FaReact/>  ReactJS - For better web development. Furthermore, this website is made from srcatch with ReactJS and <a href="https://www.gatsbyjs.com/" target="_blank" rel="noreferrer">GatsbyJS</a>.</li>
             <li><FaReact/>  React Native - For mobile development.</li>
-            <li><FaNodeJs/>  NodeJS - For web development and WhatsApp bot using <a href="https://github.com/orkestral/venom" target="_blank">venom</a>.</li>
+            <li><FaNodeJs/>  NodeJS - For web development and WhatsApp bot using <a href="https://github.com/orkestral/venom" target="_blank" rel="noreferrer">venom</a>.</li>
             <li><FaGitAlt/>  Git - For version control.</li>
             <li><FaDocker/>  Docker - Just the bases for containers management.</li>
             <li><FaDatabase/>  MongoDB - I've been using it with Python and Node.</li>

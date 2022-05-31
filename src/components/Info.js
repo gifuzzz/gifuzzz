@@ -24,7 +24,7 @@ export default function Info() {
               <br/>
                 I am {age} years old and I'm still studying at High School.
                 At the moment I am attending the 12th year (second-last year) at{" "}
-                <a href="https://bicschools.be/" target="_blank">
+                <a href="https://bicschools.be/" target="_blank" rel="noreferrer">
                   BICS
                 </a>
                 .

@@ -13,7 +13,7 @@ export default function Cybersecurity() {
         <RevealAnimation animationClass="reveal-text reveal-text-p">
           <p className="how-i-started">
             I started to learn Ethical Hacking and CyberSecurity online, thanks to Udemy.<br/>
-            I took part in the <a href="https://cyberchallenge.it/" target="_blank">CyberChallenge</a> and <a href="https://olicyber.it/" target="_blank">Olicyber</a> 2021 competitions, which helped me a lot in my cybersecurity learning path.
+            I took part in the <a href="https://cyberchallenge.it/" target="_blank" rel="noreferrer">CyberChallenge</a> and <a href="https://olicyber.it/" target="_blank" rel="noreferrer">Olicyber</a> 2021 competitions, which helped me a lot in my cybersecurity learning path.
           </p>
         </RevealAnimation>
         <div id='ccit'>
@@ -28,17 +28,17 @@ export default function Cybersecurity() {
             <blockquote className="blockquote">
               <p>CyberChallenge.IT, a training program for young talents between 16 and 23, is the main Italian initiative to identify, attract, recruit and place the next generation of cybersecurity professionals.<br/>You don&#39;t need programming experts to participate, but great passion, commitment and curiosity in scientific-technological disciplines (science, technology, engineering and mathematics). Logic, problem solving, communication skills and, above all, a great desire to learn are also needed.</p>
             </blockquote>
-            <figcaption className="blockquote-footer">Source: <a href="https://cyberchallenge.it" target="_blank">cyberchallenge.it</a></figcaption>
+            <figcaption className="blockquote-footer">Source: <a href="https://cyberchallenge.it" target="_blank" rel="noreferrer">cyberchallenge.it</a></figcaption>
           </figure>
           <RevealAnimation animationClass="reveal-text reveal-text-p">
             <p>
-              After successfully passing both logic and programming tests, and several month of training at the <a href="https://www.poliba.it/" target="_blank">Bari's Polytechnic University</a>, we had a local Jeopardy-style CTF in which we had to use all of our knowledge to solve challenges of any kind.
+              After successfully passing both logic and programming tests, and several month of training at the <a href="https://www.poliba.it/" target="_blank" rel="noreferrer">Bari's Polytechnic University</a>, we had a local Jeopardy-style CTF in which we had to use all of our knowledge to solve challenges of any kind.
               Unexpectedly I managed to get the first position, with which I won the first-classified plate, and became the leader of the team for the National Attack/Defence-style CTF.
             </p>
           </RevealAnimation>
           <RevealAnimation animationClass="reveal-text reveal-text-p">
             <p>
-              I and my team learned some really useful tools such as <a href="https://github.com/eciavatta/caronte" target="_blank">caronte</a> or <a href="https://github.com/DestructiveVoice/DestructiveFarm" target="_blank">DestructiveFarm</a>, and finally on the 7th of July we gave our best.<br/>
+              I and my team learned some really useful tools such as <a href="https://github.com/eciavatta/caronte" target="_blank" rel="noreferrer">caronte</a> or <a href="https://github.com/DestructiveVoice/DestructiveFarm" target="_blank" rel="noreferrer">DestructiveFarm</a>, and finally on the 7th of July we gave our best.<br/>
               We eventually finished on the 6th position out of a total of 33 teams from all over the country.
             </p>
           </RevealAnimation>
@@ -60,7 +60,7 @@ export default function Cybersecurity() {
               <blockquote>
                   <p>OliCyber is the program for the enhancement of excellence in cybersecurity, organized by the National Cybersecurity Laboratory of CINI (National Interuniversity Consortium for Informatics) aimed at encouraging and encouraging students from Italian secondary schools to approach IT security both in key to personal awareness and to help the most talented young people to orient themselves in the market of the sector.</p>
               </blockquote>
-              <figcaption className="blockquote-footer">Source: <a href="https://olicyber.it" target="_blank">olicyber.it</a></figcaption>
+              <figcaption className="blockquote-footer">Source: <a href="https://olicyber.it" target="_blank" rel="noreferrer">olicyber.it</a></figcaption>
           </figure>
           <RevealAnimation animationClass="reveal-text reveal-text-p">
             <p>
