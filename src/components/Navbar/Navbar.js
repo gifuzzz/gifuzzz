@@ -16,7 +16,7 @@ const navs = [
 
 export default function NavbarComponent() {
   const active = useScrollspy(navs, window.screen.height/2)
-  console.log(active)
+  // console.log(active)
   return (
     // sticky='top' expand="sm" 
     <Navbar fixed='top'> 

@@ -18,7 +18,7 @@ export default function Info() {
                 {/* If you want to dive more into my <Link to='/coding'>coding</Link> or <Link to='/cybersecurity'>cybersecurity</Link> skills, just scroll down or click on the previous links. */}
               </p>
               </RevealAnimation>
-              <RevealAnimation animationClass="reveal-text reveal-text-p">
+              <RevealAnimation animationClass="reveal-text-reverse reveal-text-p">
               <p>
                 I am Luigi Fanuzzi, an high school student with the passion for IT and CyberSecurity.
               <br/>

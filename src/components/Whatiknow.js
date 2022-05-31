@@ -16,7 +16,7 @@ export default function Whatiknow() {
             There is what I know so far:
           </p>
         </RevealAnimation>
-        <RevealAnimation animationClass="reveal-text reveal-text-p">
+        <RevealAnimation animationClass="reveal-text-reverse reveal-text-p">
           <ul>
             <li><FaLinux/>  Linux/Unix - Love the semplicity of the command line.</li>
             <li><FaPython/>  Python - My most used programming language. I&#39;ve been using it for robots, web crawling, web development, and cybersecurity related stuff.</li>

@@ -10,7 +10,7 @@ export default function Cybersecurity() {
           {/* <h1 className="title"><code>Cybersecurity</code></h1> */}
           <h1>Cybersecurity</h1>
         </RevealAnimation>
-        <RevealAnimation animationClass="reveal-text reveal-text-p">
+        <RevealAnimation animationClass="reveal-text-reverse reveal-text-p">
           <p className="how-i-started">
             I started to learn Ethical Hacking and CyberSecurity online, thanks to Udemy.<br/>
             I took part in the <a href="https://cyberchallenge.it/" target="_blank" rel="noreferrer">CyberChallenge</a> and <a href="https://olicyber.it/" target="_blank" rel="noreferrer">Olicyber</a> 2021 competitions, which helped me a lot in my cybersecurity learning path.
@@ -36,13 +36,13 @@ export default function Cybersecurity() {
               Unexpectedly I managed to get the first position, with which I won the first-classified plate, and became the leader of the team for the National Attack/Defence-style CTF.
             </p>
           </RevealAnimation>
-          <RevealAnimation animationClass="reveal-text reveal-text-p">
+          <RevealAnimation animationClass="reveal-text-reverse reveal-text-p">
             <p>
               I and my team learned some really useful tools such as <a href="https://github.com/eciavatta/caronte" target="_blank" rel="noreferrer">caronte</a> or <a href="https://github.com/DestructiveVoice/DestructiveFarm" target="_blank" rel="noreferrer">DestructiveFarm</a>, and finally on the 7th of July we gave our best.<br/>
               We eventually finished on the 6th position out of a total of 33 teams from all over the country.
             </p>
           </RevealAnimation>
-          <RevealAnimation animationClass="reveal-text reveal-text-p">
+          <RevealAnimation animationClass="reveal-text-reverse reveal-text-p">
             <p>
               Thanks to this big journey I also developed strong communication and teamworking skills.
             </p>

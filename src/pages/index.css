@@ -39,23 +39,25 @@ section {
 #welcome h1 {
     font-size: 60px;
     font-weight: bold;
-    text-align: left;
+    text-align: left !important;
 }
 #welcome h2 {
     font-weight: 500;
     font-size: 25px;
-    text-align: right;
+    text-align: right !important;
 }
 
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
 #chevronDown {
     display: flex;
     margin: auto;
     margin-top: 2rem;
     font-size: 25px;
-    animation-name: bounce;
-    animation-timing-function: ease;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
 }
 @keyframes bounce {
     0%   { transform: translateY(0); }
@@ -88,7 +90,7 @@ p {
 
 
 
-.reveal-text,.reveal-text::after {
+.reveal-text,.reveal-text::after, .reveal-text-reverse,.reveal-text-reverse::after {
     -webkit-animation-delay: var(--animation-delay, 0.2s);
             animation-delay: var(--animation-delay, 0.2s);
     -webkit-animation-iteration-count: var(--iterations, 1);
@@ -105,8 +107,18 @@ p {
     -webkit-animation-name: clip-text;
             animation-name: clip-text;
     width: fit-content;
+    
+    /* animation-iteration-count: infinite; */
 }
-.reveal-text::after {
+.reveal-text-reverse {
+    position: relative;
+    -webkit-animation-name: clip-text-reverse;
+            animation-name: clip-text-reverse;
+    width: fit-content;
+    
+    /* animation-iteration-count: infinite; */
+}
+.reveal-text::after,.reveal-text-reverse::after {
     content: "";
     position: absolute;
     z-index: 100;
@@ -117,11 +129,22 @@ p {
     background-color: var(--main-color);
     pointer-events: none;
     transform: scaleX(0);
+}
+.reveal-text::after {
     transform-origin: 0 50%;
     -webkit-animation-name: text-revealer;
             animation-name: text-revealer;
+    
+    /* animation-iteration-count: infinite; */
 }
-.reveal-text.reveal-text-p::after {
+.reveal-text-reverse::after {
+    transform-origin: 100% 50%;
+    -webkit-animation-name: text-revealer-reverse;
+            animation-name: text-revealer-reverse;
+    
+    /* animation-iteration-count: infinite; */
+}
+.reveal-text-p::after {
     background-color: var(--p-reveal-color) !important; 
 }
 @-webkit-keyframes clip-text {
@@ -173,4 +196,57 @@ p {
         width: 100%;
         margin-left: 0;
     }
+}
+
+/* @keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    tp {
+        opacity: 1;
+    }
+}
+#chevronDown {
+    animation: fade-in 1s forwards ease;
+} */
+
+#home h1+h2 {
+    opacity: 0
+}
+.align-right {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+@-webkit-keyframes clip-text-reverse {
+	from {
+		-webkit-clip-path: inset(0 0 0 100%);
+		        clip-path: inset(0 0 0 100%);
+	}
+	to {
+		-webkit-clip-path: inset(0 0 0 0);
+		        clip-path: inset(0 0 0 0);
+	}
+}
+@keyframes clip-text-reverse {
+	from {
+		-webkit-clip-path: inset(0 0 0 100%);
+		        clip-path: inset(0 0 0 100%);
+	}
+	to {
+		-webkit-clip-path: inset(0 0 0 0);
+		        clip-path: inset(0 0 0 0);
+	}
+}
+@-webkit-keyframes text-revealer-reverse {
+	0%, 50% {transform-origin: 100% 50%;}
+	60%, 100% {transform-origin: 0 50%;}
+	60% {transform: scaleX(1);}
+	100% {transform: scaleX(0);}
+}
+@keyframes text-revealer-reverse {
+	0%, 50% {transform-origin: 100% 50%;}
+	60%, 100% {transform-origin: 0 50%;}
+	60% {transform: scaleX(1);}
+	100% {transform: scaleX(0);}
 }
