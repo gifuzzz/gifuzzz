@@ -3,5 +3,9 @@ module.exports = {
     title: `gifuzzz`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-smoothscroll`,
+    `gatsby-plugin-scroll-reveal`,
+    "gatsby-plugin-react-svg",
+  ],
 }

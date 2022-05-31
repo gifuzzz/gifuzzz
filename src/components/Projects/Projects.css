@@ -1,0 +1,15 @@
+.project {
+    background-color: rgb(250, 250, 250);
+    border-radius: 15px;
+    padding: 20px; 
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px 1px rgba(92, 92, 92, 0.3);
+}
+
+.project h2 {
+    font-size: 22px;
+}
+.project p {
+    margin: 0;
+}

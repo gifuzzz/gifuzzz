@@ -1,0 +1,26 @@
+/* .navbar-brand {
+    font-family: monospace;
+    font-size: 1.75rem !important;
+    background: -webkit-linear-gradient(rgb(11, 178, 196), rgb(8, 78, 112));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+} */
+
+.navbar-brand svg g {
+    fill: var(--main-color);
+}
+
+.navbar.navbar-light.fixed-top {
+    background:  rgba(255,255,255,0.7);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}  
+
+.nav-link {
+    text-transform: capitalize;
+}
+
+.actual {
+    color: var(--main-color) !important;
+}

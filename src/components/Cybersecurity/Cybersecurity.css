@@ -1,0 +1,23 @@
+.blockquote p {
+    font-size: 16px;
+}
+.blockquote-footer {
+    text-align: center;
+    margin: 0 !important;
+}
+figure {
+    padding: 15px;
+    /* text-align: center; */
+    border-left: #4b4c4d 5px solid;
+    /* border-right: #4b4c4d 5px solid; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(138, 138, 138, 0.3);
+}
+#cybersecurity code {
+    color: rgb(0,194,0);
+}
+#cybersecurity .title {
+    background-color: black;
+    border-radius: 7px;
+    padding: 7px;
+}

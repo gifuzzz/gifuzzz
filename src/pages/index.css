@@ -1,0 +1,176 @@
+:root {
+    --main-color: rgb(55, 145, 255);
+    --main-color-hover: rgb(44, 116, 204);
+    /* --main-color: rgb(25, 225, 209); */
+    --p-reveal-color: rgb(128, 194, 255);
+}
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+a {
+    color: var(--main-color);
+    text-decoration: none;
+    transition: 0.2s all;
+}
+a:hover {
+    color: var(--main-color-hover)
+}
+.margin-auto {
+    margin: auto !important;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+section {
+    min-height: 100vh;
+    padding: 60px 0;
+    margin: auto;
+    max-width: 800px;
+}
+
+#welcome {
+    width: 400px;
+    overflow: hidden;
+}
+#welcome h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: left;
+}
+#welcome h2 {
+    font-weight: 500;
+    font-size: 25px;
+    text-align: right;
+}
+
+#chevronDown {
+    display: flex;
+    margin: auto;
+    margin-top: 2rem;
+    font-size: 25px;
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    25%  { transform: translateY(-10px); }
+    40%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+
+.terminal {
+    font-family: var(--bs-font-monospace)
+}
+.typing {
+    animation: blink .5s step-end infinite alternate;
+    border-right: 3px solid black;
+    width: fit-content;
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+    
+    0%, 100% {
+        border-color: #000;
+    }
+}
+
+p {
+    font-size: 18px;
+}
+
+
+
+.reveal-text,.reveal-text::after {
+    -webkit-animation-delay: var(--animation-delay, 0.2s);
+            animation-delay: var(--animation-delay, 0.2s);
+    -webkit-animation-iteration-count: var(--iterations, 1);
+            animation-iteration-count: var(--iterations, 1);
+    -webkit-animation-duration: var(--duration, 0.8s);
+            animation-duration: var(--duration, 0.8s);
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+    -webkit-animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+            animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+.reveal-text {
+    position: relative;
+    -webkit-animation-name: clip-text;
+            animation-name: clip-text;
+    width: fit-content;
+}
+.reveal-text::after {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--main-color);
+    pointer-events: none;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    -webkit-animation-name: text-revealer;
+            animation-name: text-revealer;
+}
+.reveal-text.reveal-text-p::after {
+    background-color: var(--p-reveal-color) !important; 
+}
+@-webkit-keyframes clip-text {
+    from {
+        -webkit-clip-path: inset(0 100% 0 0);
+                clip-path: inset(0 100% 0 0);
+    }
+    to {
+        -webkit-clip-path: inset(0 0 0 0);
+                clip-path: inset(0 0 0 0);
+    }
+}
+@keyframes clip-text {
+    from {
+        -webkit-clip-path: inset(0 100% 0 0);
+                clip-path: inset(0 100% 0 0);
+    }
+    to {
+        -webkit-clip-path: inset(0 0 0 0);
+                clip-path: inset(0 0 0 0);
+    }
+}
+@-webkit-keyframes text-revealer {
+    0%, 50% {transform-origin: 0 50%;}
+    60%, 100% {transform-origin: 100% 50%;}
+    60% {transform: scaleX(1);}
+    100% {transform: scaleX(0);}
+}
+@keyframes text-revealer {
+    0%, 50% {transform-origin: 0 50%;}
+    60%, 100% {transform-origin: 100% 50%;}
+    60% {transform: scaleX(1);}
+    100% {transform: scaleX(0);}
+}
+
+.reveal-hr {
+    animation: reveal-hr 1s 1 ease forwards;
+    height: 2px;
+    border-radius: 50px;
+    background-color: rgb(234, 234, 234);
+}
+
+@keyframes reveal-hr {
+    from {
+        width: 0;
+        margin-left: 50%;
+    }
+    to {
+        width: 100%;
+        margin-left: 0;
+    }
+}
