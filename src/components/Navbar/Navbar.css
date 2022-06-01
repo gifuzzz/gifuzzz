@@ -24,3 +24,11 @@
 .actual {
     color: var(--main-color) !important;
 }
+.navbar-toggler:not(.collapsed), .navbar-toggler.collapsed {
+    border: 0px solid transparent !important;
+    color: transparent !important;
+    /* background-color: transparent; */
+}
+.navbar-collapse {
+    text-align: center;
+}

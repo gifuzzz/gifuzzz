@@ -1,3 +1,5 @@
+// https://dev.to/rgolawski/highlight-active-menu-item-with-scrollspy-hook-1gpp
+
 import { useState, useLayoutEffect } from 'react';
 
 // Restrict value to be between the range [0, value]

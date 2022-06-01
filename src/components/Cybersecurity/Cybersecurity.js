@@ -7,7 +7,6 @@ export default function Cybersecurity() {
     <section id="cybersecurity" className="center">
       <div> 
         <RevealAnimation animationClass="reveal-text">
-          {/* <h1 className="title"><code>Cybersecurity</code></h1> */}
           <h1>Cybersecurity</h1>
         </RevealAnimation>
         <RevealAnimation animationClass="reveal-text-reverse reveal-text-p">
@@ -20,16 +19,14 @@ export default function Cybersecurity() {
           <RevealAnimation animationClass="reveal-text">
             <h3>CyberChallenge 2021</h3>
           </RevealAnimation>
-          <figure
-            data-sal="fade"
-            data-sal-duration="1500"
-            data-sal-easing="ease-out"
-          >
-            <blockquote className="blockquote">
-              <p>CyberChallenge.IT, a training program for young talents between 16 and 23, is the main Italian initiative to identify, attract, recruit and place the next generation of cybersecurity professionals.<br/>You don&#39;t need programming experts to participate, but great passion, commitment and curiosity in scientific-technological disciplines (science, technology, engineering and mathematics). Logic, problem solving, communication skills and, above all, a great desire to learn are also needed.</p>
-            </blockquote>
-            <figcaption className="blockquote-footer">Source: <a href="https://cyberchallenge.it" target="_blank" rel="noreferrer">cyberchallenge.it</a></figcaption>
-          </figure>
+          <RevealAnimation animationClass='fade-in'>
+            <figure>
+              <blockquote className="blockquote">
+                <p>CyberChallenge.IT, a training program for young talents between 16 and 23, is the main Italian initiative to identify, attract, recruit and place the next generation of cybersecurity professionals.<br/>You don&#39;t need programming experts to participate, but great passion, commitment and curiosity in scientific-technological disciplines (science, technology, engineering and mathematics). Logic, problem solving, communication skills and, above all, a great desire to learn are also needed.</p>
+              </blockquote>
+              <figcaption className="blockquote-footer">Source: <a href="https://cyberchallenge.it" target="_blank" rel="noreferrer">cyberchallenge.it</a></figcaption>
+            </figure>
+          </RevealAnimation>
           <RevealAnimation animationClass="reveal-text reveal-text-p">
             <p>
               After successfully passing both logic and programming tests, and several month of training at the <a href="https://www.poliba.it/" target="_blank" rel="noreferrer">Bari's Polytechnic University</a>, we had a local Jeopardy-style CTF in which we had to use all of our knowledge to solve challenges of any kind.
@@ -52,16 +49,14 @@ export default function Cybersecurity() {
           <RevealAnimation animationClass="reveal-text">
             <h3>OliCyber 2021</h3>
           </RevealAnimation>
-          <figure
-            data-sal="fade"
-            data-sal-duration="1500"
-            data-sal-easing="ease-out"
-          >
+          <RevealAnimation animationClass='fade-in'>
+            <figure>
               <blockquote>
                   <p>OliCyber is the program for the enhancement of excellence in cybersecurity, organized by the National Cybersecurity Laboratory of CINI (National Interuniversity Consortium for Informatics) aimed at encouraging and encouraging students from Italian secondary schools to approach IT security both in key to personal awareness and to help the most talented young people to orient themselves in the market of the sector.</p>
               </blockquote>
               <figcaption className="blockquote-footer">Source: <a href="https://olicyber.it" target="_blank" rel="noreferrer">olicyber.it</a></figcaption>
-          </figure>
+            </figure>
+          </RevealAnimation>
           <RevealAnimation animationClass="reveal-text reveal-text-p">
             <p>
               Since I passed the tests for CyberChallenge, I was already subscribed in the OliCyber program.<br/>

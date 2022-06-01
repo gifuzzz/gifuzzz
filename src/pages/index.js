@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import sal from 'sal.js'
 import RevealAnimation from "../components/RevealAnimation";
 import Welcome from "../components/Welcome";
 import Info from "../components/Info";
@@ -12,9 +11,6 @@ import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
 
 const Index = () => {
-  
-  useEffect(sal, [])
-
   return (
     <>
       <Navbar actual="home" />

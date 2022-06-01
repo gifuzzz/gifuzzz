@@ -1,11 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `gifuzzz`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://gifuzzz.me`,
   },
   plugins: [
     `gatsby-plugin-smoothscroll`,
-    `gatsby-plugin-scroll-reveal`,
     "gatsby-plugin-react-svg",
   ],
 }

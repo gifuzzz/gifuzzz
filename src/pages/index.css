@@ -1,7 +1,6 @@
 :root {
     --main-color: rgb(55, 145, 255);
     --main-color-hover: rgb(44, 116, 204);
-    /* --main-color: rgb(25, 225, 209); */
     --p-reveal-color: rgb(128, 194, 255);
 }
 body {
@@ -108,6 +107,7 @@ p {
             animation-name: clip-text;
     width: fit-content;
     
+    /* for debug */
     /* animation-iteration-count: infinite; */
 }
 .reveal-text-reverse {
@@ -116,6 +116,7 @@ p {
             animation-name: clip-text-reverse;
     width: fit-content;
     
+    /* for debug */
     /* animation-iteration-count: infinite; */
 }
 .reveal-text::after,.reveal-text-reverse::after {
@@ -135,6 +136,7 @@ p {
     -webkit-animation-name: text-revealer;
             animation-name: text-revealer;
     
+    /* for debug */
     /* animation-iteration-count: infinite; */
 }
 .reveal-text-reverse::after {
@@ -142,6 +144,7 @@ p {
     -webkit-animation-name: text-revealer-reverse;
             animation-name: text-revealer-reverse;
     
+    /* for debug */
     /* animation-iteration-count: infinite; */
 }
 .reveal-text-p::after {
@@ -198,7 +201,10 @@ p {
     }
 }
 
-/* @keyframes fade-in {
+.fade-in {
+    animation: 1.5s fade-in ease-out;
+}
+@keyframes fade-in {
     from {
         opacity: 0;
     }
@@ -206,9 +212,6 @@ p {
         opacity: 1;
     }
 }
-#chevronDown {
-    animation: fade-in 1s forwards ease;
-} */
 
 #home h1+h2 {
     opacity: 0
