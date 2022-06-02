@@ -9,11 +9,15 @@ const clamp = (value) => Math.max(0, value);
 const isBetween = (value, floor, ceil) =>
   value >= floor && value <= ceil;
 
-export default function useScrollspy(ids, offset = 0) {
+export default function useScrollspy(ids) {
   const [activeId, setActiveId] = useState("");
-
+  
   useLayoutEffect(() => {
+    const isBrowser = typeof window !== 'undefined'
+    if (!isBrowser) return false
+
     const listener = () => {
+      const offset = window.screen.height/2
       const scroll = window.pageYOffset;
 
       const position = ids
@@ -42,7 +46,7 @@ export default function useScrollspy(ids, offset = 0) {
       window.removeEventListener("resize", listener);
       window.removeEventListener("scroll", listener);
     };
-  }, [ids, offset]);
+  }, [ids]);
 
   return activeId;
 };

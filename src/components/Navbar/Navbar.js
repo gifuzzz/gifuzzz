@@ -14,7 +14,7 @@ const navs = [
 ]
 
 export default function NavbarComponent() {
-  const active = useScrollspy(navs, window.screen.height/2)
+  const active = useScrollspy(navs)
   
   return (
     <Navbar fixed='top' expand="sm" collapseOnSelect> 

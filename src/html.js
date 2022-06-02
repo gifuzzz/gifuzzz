@@ -1,6 +1,5 @@
 import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
-import Footer from "./components/Footer/Footer";
 
 const Html = ({ htmlAttributes, ...props }) => {
 	// render the default markup to a string in a SSR friendly way
@@ -45,6 +44,7 @@ const Root = ({
 				name="viewport"
 				content="width=device-width, initial-scale=1, shrink-to-fit=no"
 			/>
+			<title>gifuzzz</title>
 			{headComponents}
 		</head>
 		<body {...bodyAttributes}>

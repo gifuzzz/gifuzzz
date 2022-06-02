@@ -6,5 +6,11 @@ module.exports = {
   plugins: [
     `gatsby-plugin-smoothscroll`,
     "gatsby-plugin-react-svg",
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/icon.svg',
+      },
+    },
   ],
 }
