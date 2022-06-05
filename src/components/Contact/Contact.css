@@ -25,3 +25,7 @@ section#contact {
 #submit:hover {
     background-color: var(--main-color-hover);
 }
+
+#res {
+    margin-top: 1rem;
+}
