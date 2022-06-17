@@ -20,8 +20,7 @@ export default function Info() {
                 <p>
                   I am Luigi Fanuzzi, an high school student with the passion for IT and CyberSecurity.
                 <br/>
-                  I am {age} years old and I'm still studying at High School.
-                  At the moment I am attending the 12th year (second-last year) at{" "}
+                  I am {age} years old and at the moment I am attending the 12th year (second-last year) at{" "}
                   <a href="https://bicschools.be/" target="_blank" rel="noreferrer">
                     BICS
                   </a>

@@ -1,0 +1,13 @@
+div.notfound {
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100vw !important;
+    max-height: -webkit-fill-available !important;
+    height: 100vh;
+    min-height: 0 !important;
+}
+img#travolta {
+    width: 600px;
+    max-width: 100vw;
+}

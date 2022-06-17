@@ -10,6 +10,7 @@ const Html = ({ htmlAttributes, ...props }) => {
 	return (
 		<html
 			{...htmlAttributes}
+			lang="en"
 			dangerouslySetInnerHTML={{
 				__html: `
 <!--
