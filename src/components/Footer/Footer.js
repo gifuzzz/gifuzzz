@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="center">
       <div className="social">
-        <a className="icon" target="_blank" rel="noreferrer" href="mailto:lf@gifuzzz.me">
+        <a className="icon" target="_blank" rel="noreferrer" href="mailto:luigi.fanuzzi@gmail.com">
           <IoMail />
         </a>
         <a className="icon" target="_blank" rel="noreferrer" href="https://github.com/gifuzzz">
@@ -25,7 +25,7 @@ export default function Footer() {
           <FaDiscord />
         </a>
       </div>
-      <p className="copyright"><small>Copyright © {new Date().getFullYear()} Luigi Fanuzzi. Source code on <a href="https://github.com/gifuzzz/gifuzzz.me" target="_blank" rel="noreferrer">github</a>.</small></p>
+      <p className="copyright"><small>Copyright © {new Date().getFullYear()} Luigi Fanuzzi. Source code on <a href="https://github.com/gifuzzz/gifuzzz" target="_blank" rel="noreferrer">github</a>.</small></p>
     </footer>
   );
 }

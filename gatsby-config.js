@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `gifuzzz`,
-    siteUrl: `https://gifuzzz.me`,
+    siteUrl: `https://gifuzzz.eu`,
   },
   plugins: [
     `gatsby-plugin-smoothscroll`,

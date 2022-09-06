@@ -1,3 +1,3 @@
-# [gifuzzz.me](https://gifuzzz.me)
+# [gifuzzz.eu](https://gifuzzz.eu)
 
-This is the second version of the [gifuzzz.me](https://gifuzzz.me) webiste, made using [GatsbyJS](https://www.gatsbyjs.com/) and [ReactJS](https://reactjs.org/)
+This is the second version of the [gifuzzz.eu](https://gifuzzz.eu) webiste, made using [GatsbyJS](https://www.gatsbyjs.com/) and [ReactJS](https://reactjs.org/)

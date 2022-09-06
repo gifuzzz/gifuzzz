@@ -20,7 +20,7 @@ const Html = ({ htmlAttributes, ...props }) => {
   \`:-._,------' \` _,\`--\` -: \` gifuzzz \` ,' 
    \`---..__,,--'            \` -'. -'  \`
 
-Hello there, if you need it the source code of this website is available at https://github.com/gifuzzz.me
+Hello there, if you need it the source code of this website is available at https://github.com/gifuzzz
 -->
 				${renderedChildren}
 			`

@@ -19,7 +19,7 @@ export default function Contact() {
       return
     }
     last.current = now
-    axios.post('https://gifuzzz.me/api/contact', {
+    axios.post('https://gifuzzz.eu/api/contact', {
       name: name.current.value,
       email: email.current.value,
       message: message.current.value
