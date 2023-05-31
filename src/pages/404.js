@@ -1,10 +1,10 @@
 import * as React from "react"
 import { Link } from "gatsby" 
 import './404.css'
-import travolta from '../images/image_processing20210217-20195-vnftmi.png'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { StaticImage } from "gatsby-plugin-image"
 
 const NotFoundPage = () => {
   return (
@@ -21,7 +21,7 @@ const NotFoundPage = () => {
             <Link to="/" style={{fontSize: 20}}>Go home</Link>
           </Col>
           <Col className='center'>
-            <img id="travolta" src={travolta} alt="Confused Travolta"></img>
+            <StaticImage src='../images/travolta.png' alt="Confused Travolta" loading='eager'/>
           </Col>
         </Row>
       </Container>

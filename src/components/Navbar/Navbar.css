@@ -11,11 +11,11 @@
     fill: var(--main-color);
 }
 
-.navbar.navbar-light.fixed-top {
-    background:  rgba(255,255,255,0.7);
+.navbar.fixed-top {
+    background:  var(--nav-bg);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-}  
+}
 
 .nav-link {
     text-transform: capitalize;

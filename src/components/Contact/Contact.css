@@ -11,6 +11,9 @@ section#contact {
 
 #contact .form-control {
     margin: 1rem 0;
+    background-color: transparent;
+    border-color: var(--project-border);
+    color: var(--font-color);
 }
 
 #submit {

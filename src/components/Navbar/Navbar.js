@@ -4,6 +4,8 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 import useScrollspy from './useScrollSpy';
 import Logo from '../../images/logo.svg';
 import './Navbar.css'
+import { GiDeathStar, GiPyromaniac } from 'react-icons/gi';
+import useDarkMode from '@fisch0920/use-dark-mode';
 
 const navs = [
   'home',
@@ -15,12 +17,13 @@ const navs = [
 
 export default function NavbarComponent() {
   const active = useScrollspy(navs)
+  const darkMode = useDarkMode(window.localStorage.getItem('darkMode') == 'true');
   
   return (
-    <Navbar fixed='top' expand="sm" collapseOnSelect> 
+    <Navbar fixed='top' expand="sm" collapseOnSelect variant={darkMode.value ? 'dark' : 'light'}> 
       <Container>
       {/* <Navbar.Brand href="/">gifuzzz</Navbar.Brand> */}
-      <Navbar.Brand href="/"><Logo height={30} /></Navbar.Brand>
+      <Navbar.Brand href="#"><Logo height={30} /></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
         <Nav>
@@ -28,19 +31,33 @@ export default function NavbarComponent() {
             navs.map(name => (
               <Nav.Link
                 key={name}
-                className={['nav-link', active===name?'actual':''].join(' ')}
+                className={ active === name ? 'actual' : undefined }
                 onClick={
                   (event) => {
                     event.preventDefault();
                     scrollTo(`#${name}`);
                   }
                 }
-                href='#'
               >
                 {name}
               </Nav.Link>
             ))
           }
+          <Nav.Link
+            key={'darkMode'}
+          >
+            { darkMode.value ?
+              <GiPyromaniac
+                onClick={darkMode.disable}
+                size={22}
+              />
+              : 
+              <GiDeathStar
+                onClick={darkMode.enable}
+                size={22}
+              />
+            }
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
       </Container>

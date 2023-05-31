@@ -1,11 +1,46 @@
 :root {
-    --main-color: rgb(55, 145, 255);
+    --main-color: rgb(49, 141, 238);
     --main-color-hover: rgb(44, 116, 204);
     --p-reveal-color: rgb(128, 194, 255);
+    --bg-color: #fff;
+    --font-color: var(--bs-body-color);
+    --nav-bg: rgba(255,255,255, 0.7);
+    --hr: rgb(234, 234, 234);
+    
+    --project-bg: rgb(250, 250, 250);
+    --project-border: #ccc;
+    --project-shadow: 0 0 10px 3px rgba(138, 138, 138, 0.3);
+    
+    --cs-figure-bg: rgb(250, 250, 250);
+    --cs-figure-shadow: 0 0 10px 3px rgba(138, 138, 138, 0.3);
+    --cs-figure-border-left: #4b4c4d 5px solid;
+    --cs-bq-footer-color: var(--bs-gray-600);
 }
+.dark-mode {
+    --main-color: rgb(65, 173, 236);
+    --main-color-hover: rgb(57, 140, 228);
+    --p-reveal-color: rgb(0, 105, 190);
+    --bg-color: rgb(17,17,17);
+    --font-color: #ddd;
+    --nav-bg: rgba(17,17,17, 0.7);
+    --hr: rgb(50, 50, 50);
+    
+    --project-bg: rgb(35, 35, 35);
+    --project-border: #333;
+    --project-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
+    
+    --cs-figure-bg: rgb(35, 35, 35);
+    --cs-figure-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
+    --cs-figure-border-left: #aaa 5px solid;
+    --cs-bq-footer-color: var(--bs-gray-500);
+}
+
 body {
+    transition: all 0.2s ease-out;
     margin-left: 10%;
     margin-right: 10%;
+    background-color: var(--bg-color);
+    color: var(--font-color);
 }
 a {
     color: var(--main-color);
@@ -82,7 +117,7 @@ section {
 }
 .typing {
     animation: blink .5s step-end infinite alternate;
-    border-right: 3px solid black;
+    border-right: 3px solid;
     width: fit-content;
 }
 @keyframes blink {
@@ -91,7 +126,7 @@ section {
     }
     
     0%, 100% {
-        border-color: #000;
+        border-color: var(--font-color);
     }
 }
 
@@ -199,7 +234,7 @@ p,li {
     animation: reveal-hr 1s 1 ease forwards;
     height: 2px;
     border-radius: 50px;
-    background-color: rgb(234, 234, 234);
+    background-color: var(--hr);
 }
 
 @keyframes reveal-hr {
