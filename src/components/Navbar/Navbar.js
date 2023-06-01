@@ -50,7 +50,7 @@ export default function NavbarComponent() {
           <Nav.Link
             key={'darkMode'}
           >
-            { darkMode.value ?
+            { navDark ?
               <GiPyromaniac
                 onClick={darkMode.disable}
                 size={22}
