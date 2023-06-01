@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import useScrollspy from './useScrollSpy';
@@ -16,11 +16,15 @@ const navs = [
 ]
 
 export default function NavbarComponent() {
-  const active = useScrollspy(navs)
-  const darkMode = useDarkMode(window.localStorage.getItem('darkMode') == 'true');
-  
+  const active = useScrollspy(navs);
+  const [navDark, setNavDark] = React.useState(false);
+  const darkMode = useDarkMode(false);
+  useEffect(() => {
+    setNavDark(darkMode.value);
+  }, [darkMode]);
+
   return (
-    <Navbar fixed='top' expand="sm" collapseOnSelect variant={darkMode.value ? 'dark' : 'light'}> 
+    <Navbar fixed='top' expand="sm" collapseOnSelect variant={navDark ? 'dark' : 'light'}> 
       <Container>
       {/* <Navbar.Brand href="/">gifuzzz</Navbar.Brand> */}
       <Navbar.Brand href="#"><Logo height={30} /></Navbar.Brand>

@@ -6,6 +6,8 @@ module.exports = {
   plugins: [
     `gatsby-plugin-smoothscroll`,
     "gatsby-plugin-react-svg",
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
