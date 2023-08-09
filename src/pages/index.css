@@ -16,7 +16,7 @@
     --cs-figure-border-left: #4b4c4d 5px solid;
     --cs-bq-footer-color: var(--bs-gray-600);
 }
-.dark-mode {
+.dark {
     --main-color: rgb(65, 173, 236);
     --main-color-hover: rgb(57, 140, 228);
     --p-reveal-color: rgb(0, 105, 190);
@@ -66,75 +66,9 @@ section {
     max-width: 800px;
 }
 
-#welcome {
-    width: 400px;
-    overflow: hidden;
-}
-#welcome h1 {
-    font-size: 60px;
-    font-weight: bold;
-    text-align: left !important;
-}
-#welcome h2 {
-    font-weight: 500;
-    font-size: 25px;
-    text-align: right !important;
-}
-@media only screen and (max-width: 600px) {
-    body {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    #welcome {
-        width: 100%;
-    }
-    #welcome h1 {
-        font-size: 55px !important;
-    }
-}
-
-.bounce {
-    animation-name: bounce;
-    animation-timing-function: ease;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-#chevronDown {
-    display: flex;
-    margin: auto;
-    margin-top: 2rem;
-    font-size: 25px;
-}
-@keyframes bounce {
-    0%   { transform: translateY(0); }
-    25%  { transform: translateY(-10px); }
-    40%  { transform: translateY(0); }
-    100% { transform: translateY(0); }
-}
-
-.terminal {
-    font-family: var(--bs-font-monospace)
-}
-.typing {
-    animation: blink .5s step-end infinite alternate;
-    border-right: 3px solid;
-    width: fit-content;
-}
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-    
-    0%, 100% {
-        border-color: var(--font-color);
-    }
-}
-
 p,li {
     font-size: 18px;
 }
-
-
 
 .reveal-text,.reveal-text::after, .reveal-text-reverse,.reveal-text-reverse::after {
     -webkit-animation-delay: var(--animation-delay, 0.2s);

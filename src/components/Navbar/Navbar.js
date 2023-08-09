@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import useScrollspy from './useScrollSpy';
 import Logo from '../../images/logo.svg';
 import './Navbar.css'
 import { GiDeathStar, GiPyromaniac } from 'react-icons/gi';
-import useDarkMode from '@fisch0920/use-dark-mode';
+import useDarkMode from '../../utils/use-dark-mode';
 
 const navs = [
   'home',
@@ -17,7 +17,7 @@ const navs = [
 
 export default function NavbarComponent() {
   const active = useScrollspy(navs);
-  const [navDark, setNavDark] = React.useState(false);
+  const [navDark, setNavDark] = useState(false);
   const darkMode = useDarkMode(false);
   useEffect(() => {
     setNavDark(darkMode.value);

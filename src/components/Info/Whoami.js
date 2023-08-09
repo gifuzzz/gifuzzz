@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import RevealAnimation from './RevealAnimation';
+import RevealAnimation from '../../utils/RevealAnimation';
 
 export default function Whoami() {
   const [txt, setTxt] = useState('$ㅤ')

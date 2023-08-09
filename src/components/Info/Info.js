@@ -1,7 +1,9 @@
 import React from 'react';
-import RevealAnimation from './RevealAnimation';
+import './Info.css';
+import RevealAnimation from '../../utils/RevealAnimation';
 import Whoami from './Whoami';
-import Whatiknow from "../components/Whatiknow";
+import Whatiknow from "./Whatiknow";
+import { BICS_URL } from '../../utils/consts';
 
 export default function Info() {
   const age = parseInt(new Date(Date.now()-new Date('2004-07-05'))/ (1000 * 3600 * 24 * 365))
@@ -21,7 +23,7 @@ export default function Info() {
                   I am Luigi Fanuzzi, an high school student with the passion for IT and CyberSecurity.
                 <br/>
                   I am {age} years old and at the moment I am attending the 13th year (last year) at{" "}
-                  <a href="https://bicschools.be/" target="_blank" rel="noreferrer">
+                  <a href={BICS_URL} target="_blank" rel="noreferrer">
                     BICS
                   </a>
                   .

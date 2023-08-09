@@ -1,7 +1,8 @@
 import React, {useState, useRef} from 'react';
-import RevealAnimation from '../RevealAnimation';
+import RevealAnimation from '../../utils/RevealAnimation';
 import axios from 'axios';
 import './Contact.css';
+import { BASE_URL } from '../../utils/consts';
 
 export default function Contact() {
   const name = useRef()
@@ -19,7 +20,7 @@ export default function Contact() {
       return
     }
     last.current = now
-    axios.post('https://gifuzzz.eu/api/contact', {
+    axios.post(BASE_URL + 'api/contact', {
       name: name.current.value,
       email: email.current.value,
       message: message.current.value

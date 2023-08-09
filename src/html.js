@@ -1,5 +1,6 @@
 import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
+import { GITHUB_REPO_URL } from "./utils/consts";
 
 const Html = ({ htmlAttributes, ...props }) => {
 	// render the default markup to a string in a SSR friendly way
@@ -20,7 +21,7 @@ const Html = ({ htmlAttributes, ...props }) => {
   \`:-._,------' \` _,\`--\` -: \` gifuzzz \` ,' 
    \`---..__,,--'            \` -'. -'  \`
 
-Hello there, if you need it the source code of this website is available at https://github.com/gifuzzz
+Hello there, if you need it the source code of this website is available at ${GITHUB_REPO_URL}
 -->
 				${renderedChildren}
 			`

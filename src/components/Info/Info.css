@@ -1,0 +1,17 @@
+.terminal {
+    font-family: var(--bs-font-monospace)
+}
+.typing {
+    animation: blink .5s step-end infinite alternate;
+    border-right: 3px solid;
+    width: fit-content;
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+    
+    0%, 100% {
+        border-color: var(--font-color);
+    }
+}

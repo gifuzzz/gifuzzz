@@ -1,7 +1,8 @@
 import React from "react";
+import './Welcome.css';
 import { HiChevronDoubleDown } from 'react-icons/hi';
 import scrollTo from 'gatsby-plugin-smoothscroll';
-import RevealAnimation from './RevealAnimation';
+import RevealAnimation from '../../utils/RevealAnimation';
 
 export default function Welcome() {
   return (
