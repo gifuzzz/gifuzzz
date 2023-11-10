@@ -65,7 +65,6 @@ section {
     margin: auto;
     max-width: 800px;
 }
-
 p,li {
     font-size: 18px;
 }
@@ -192,10 +191,6 @@ p,li {
     tp {
         opacity: 1;
     }
-}
-
-#home h1+h2 {
-    opacity: 0
 }
 .align-right {
     margin-left: auto;

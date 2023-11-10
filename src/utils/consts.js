@@ -5,7 +5,7 @@ export const GITHUB_URL = 'https://github.com/gifuzzz/';
 export const INSTAGRAM_URL = 'https://instagram.com/gifuzzz';
 export const TELEGRAM_URL = 'https://t.me/gifuzzz';
 
-export const BICS_URL = 'https://bicschool.be/secondary';
+export const KULEUVEN_URL = 'https://www.kuleuven.be/english/campuses/group-t-leuven-campus';
 export const POLIBA_URL = 'https://www.poliba.it/';
 export const CYBERCHALLENGE_URL = 'https://cyberchallenge.it/';
 export const OLICYBER_URL = 'https://olicyber.it/';

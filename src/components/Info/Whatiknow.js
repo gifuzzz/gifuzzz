@@ -11,9 +11,9 @@ export default function Whatiknow() {
         </RevealAnimation>
         <RevealAnimation animationClass="reveal-text reveal-text-p">
           <p>
-            Almost everything that I know is the product of years of self learning, practice, and projects that I like to dive into.<br/>
+            Almost everything that I know is the product of years of self learning, practice, and projects that I like to dive into.
             I always enjoy learning something new and whenever I have time to code, I code random things.<br/>
-            There is what I know so far:
+            Here is what I know so far:
           </p>
         </RevealAnimation>
         <RevealAnimation animationClass="reveal-text-reverse reveal-text-p">
@@ -25,12 +25,12 @@ export default function Whatiknow() {
             <li><FaReact/>  React Native - For mobile development.</li>
             <li><FaNodeJs/>  NodeJS - For web development and WhatsApp bot.</li>
             <li><FaGitAlt/>  Git - For version control.</li>
-            <li><FaDocker/>  Docker - Just the bases for containers management.</li>
+            <li><FaDocker/>  Docker - For security of applications and scalability.</li>
             <li><FaDatabase/>  MongoDB - I've been using it with Python and Node.</li>
-            <li><FaDatabase/>  SQL - Just the bases for making some queries.</li>
+            <li><FaDatabase/>  SQL - Just the bases for making queries and SQL injection.</li>
             <li><FaRobot/>  IoT - Raspberry Pi and Arduino - “With programming knowledge and a bit of electronic you can reach the moon”.</li>
             <li><FaMicrochip/>  C (for Arduino) - The basic for programming with Arduino.</li>
-            <li><FaSitemap/>  MQTT - IoT event management. </li>
+            <li><FaSitemap/>  MQTT - IoT event management.</li>
             <li><FaRaspberryPi/>  Cloud with Raspberry - To have an external server to host websites and different projects.</li>
             <li><FaVuejs/>  VueJS - Still learning...</li>
             <li><FaBrain/>  Deep learning with Python - Still learning...</li>
