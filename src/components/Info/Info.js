@@ -22,7 +22,7 @@ export default function Info() {
                 <p>
                   I am Luigi Fanuzzi, an engineering student with the passion for IT and CyberSecurity.
                 <br/>
-                  I am {age} years old and at the moment I am attending the first bachelor year at{" "}
+                  I am {age} years old and at the moment I am attending the second bachelor year at{" "}
                   <a href={KULEUVEN_URL} target="_blank" rel="noreferrer">
                     KU Leuven Group T campus
                   </a>
