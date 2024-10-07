@@ -18,7 +18,7 @@ export default function Whatiknow() {
         </RevealAnimation>
         <RevealAnimation animationClass="reveal-text-reverse reveal-text-p">
           <ul>
-            <li><FaLinux/>  Linux/Unix - Love the semplicity of the command line.</li>
+            <li><FaLinux/>  Linux/Unix - Love the simplicity of the command line.</li>
             <li><FaPython/>  Python - My most used programming language. I&#39;ve been using it for robots, web crawling, web development, and cybersecurity related stuff.</li>
             <li><FaHtml5/>  Html | <FaCss3/>  CSS | <FaJsSquare/>  Javascript - For basic web development.</li>
             <li><FaReact/>  ReactJS - For better web development. Furthermore, this website is made from srcatch with ReactJS and GatsbyJS.</li>
