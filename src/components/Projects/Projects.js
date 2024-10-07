@@ -15,7 +15,7 @@ export default function Projects() {
         </RevealAnimation>
         <div className="project">
           <RevealAnimation animationClass="reveal-text">
-            <h2>Face regognition to open the turnstile of a local gym<br/></h2>
+            <h2>Face recognition to open the turnstile of a local gym<br/></h2>
           </RevealAnimation>
           <RevealAnimation animationClass="reveal-text-reverse reveal-text-p">
             <p>Face recognition programme used by a local gym to open its turnstile with the only use of your face.</p>
