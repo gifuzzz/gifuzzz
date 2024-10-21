@@ -33,7 +33,7 @@ export default function Cybersecurity() {
           <RevealAnimation animationClass="reveal-text reveal-text-p">
             <p>
               After successfully passing both logic and programming tests, and several month of training at the <a href={POLIBA_URL} target="_blank" rel="noreferrer">Bari's Polytechnic University</a>, we had a local Jeopardy-style CTF in which we had to use all of our knowledge to solve challenges of any kind.
-              Unexpectedly I managed to get the first position, with which I won the first-classified plate, and became the leader of the team for the National Attack/Defence-style CTF.
+              I managed to get the first position, with which I won the first-classified plate, and became the leader of the team for the National Attack/Defence-style CTF.
             </p>
           </RevealAnimation>
           <RevealAnimation animationClass="reveal-text-reverse reveal-text-p">
