@@ -53,7 +53,7 @@ export default function Projects() {
         <Project
           title='motionctl'
           href={GITHUB_URL + "motionctl"}
-            
+          techStack={['Python', 'Flask', 'HTML', 'Javascript', 'CSS']}
         >
           <p><a href={MOTION_PROJECT_URL} target="_blank" rel="noreferrer">Motion</a> is a lightweight program that allows you to create a camera server from, for instance, a Raspberry Pi.
           By default it also stores videos when it detects something moving, but its web interface does not allow you to watch these videos.<br/>
