@@ -10,8 +10,8 @@ import useDarkMode from '../../utils/use-dark-mode';
 const navs = [
   'home',
   'info',
-  'cybersecurity',
   'projects',
+  'cybersecurity',
   'contact',
 ]
 
