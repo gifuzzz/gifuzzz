@@ -12,7 +12,7 @@ export default function Whatiknow() {
         <RevealAnimation animationClass="reveal-text reveal-text-p">
           <p>
             Almost everything that I know is the product of years of self learning, practice, and projects that I like to dive into.
-            I always enjoy learning something new and whenever I have time to code, I code random things.<br/>
+            I always enjoy learning something new and whenever I have time to code, I develop solutions to problems I ecounter.<br/>
             Here is what I know so far:
           </p>
         </RevealAnimation>

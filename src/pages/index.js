@@ -17,19 +17,19 @@ const Index = () => {
 
       <Welcome />
       
-      <RevealAnimation animationClass='reveal-hr' triggerOnce={false}></RevealAnimation>
+      <RevealAnimation animationClass='reveal-hr' triggerOnce={false} />
       
       <Info />
 
-      <RevealAnimation animationClass='reveal-hr' triggerOnce={false}></RevealAnimation>
-      
-      <Cybersecurity />
-
-      <RevealAnimation animationClass='reveal-hr' triggerOnce={false}></RevealAnimation>
+      <RevealAnimation animationClass='reveal-hr' triggerOnce={false} />
       
       <Projects />
 
-      <RevealAnimation animationClass='reveal-hr' triggerOnce={false}></RevealAnimation>
+      <RevealAnimation animationClass='reveal-hr' triggerOnce={false} />
+      
+      <Cybersecurity />
+
+      <RevealAnimation animationClass='reveal-hr' triggerOnce={false} />
       
       <Contact />
       

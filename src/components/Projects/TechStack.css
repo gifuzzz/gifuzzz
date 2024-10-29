@@ -1,0 +1,16 @@
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.tech-bubble {
+    background-color: var(--techstack-bg);
+    border: 1px solid var(--techstack-border);
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: var(--techstack-shadow);
+}

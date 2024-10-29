@@ -15,9 +15,11 @@ export default function Welcome() {
         </RevealAnimation>
         <RevealAnimation animationClass='reveal-text-reverse reveal-text-p align-right'>
         <h2>
-          I'm a developer and hacker
+          I'm a developer and ethical
           <br/>
-          from Italy and Belgium
+          hacker from Italy 
+          <br/>
+          and Belgium
         </h2>
         </RevealAnimation>
         <div className='center bounce'>

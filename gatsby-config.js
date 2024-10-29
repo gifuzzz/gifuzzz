@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `gifuzzz`,
+    title: `Luigi Fanuzzi`,
     siteUrl: `https://gifuzzz.eu`,
   },
   plugins: [
