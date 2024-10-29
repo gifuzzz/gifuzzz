@@ -18,21 +18,30 @@ export default function Projects() {
           title='Gigify'
           techStack={['React Native', 'NodeJS', 'MongoDB']}
         >
-          <p>A React Native mobile app to listen and download music without annoying advertisements. Customizable UI and possibility to create private personal playlists.</p>
-          
+          <p>Developed a mobile application for streaming and downloading music. It has a music player, playlist management, and the possibility to customize the main color of the app.</p>
         </Project>
         <Project
-          title='Face regognition to open the turnstile of a local gym'
-          techStack={['Python', 'OpenCV', 'Numpy', 'Bluetooth API']}
+          title='Location tracker app'
+          techStack={['React Native', 'GPS', 'Python', 'MongoDB']}
         >
-          <p>Face recognition programme used by a local gym to open its turnstile with the only use of the cutsomer's face.</p>
+          <p>Built an app to track and share the location of a device. Uses the device's GPS to track the location and sends it to a server, which stores it in a database. The app also has a feature to share the location with other users.</p>
+        </Project>
+        <Project
+          title='Face Recognition Gym Turnstile'
+          techStack={['Python', 'Bluetooth']}
+        >
+          <p>
+            Created a face recognition system for a local gym to automate turnstile access, using simply a webcam.
+            Using OpenCV, numpy, and face_recognition libraries, it recognizes the gym members and opens the turnstile for them.
+            Moreover, integrated Bluetooth device to open the turnstile via mobile devices.
+          </p>
         </Project>
         <Project
           title='WhatsApp bot'
           techStack={['NodeJS', 'MongoDB']}
         >
           <p>
-            Using NodeJS I made a whatsapp bot with many features and per-chat custom commands.
+            Created a whatsapp bot with many features and per-chat custom commands.
             For instance, it can transcribe your vocal messages and make custom stickers out of pictures and videos.
           </p>
         </Project>
@@ -46,14 +55,14 @@ export default function Projects() {
         <Project
           title='ledstrip'
           href={GITHUB_URL + "ledstrip"}
-          techStack={['Python', 'Flask', 'bluepy', 'HTML', 'Javascript', 'CSS']}
+          techStack={['Python', 'Bluetooth', 'HTML', 'Javascript', 'CSS']}
         >
           <p>Bluetooth controller made to control my <a href={LIGHTS_URL} target="_blank" rel="noreferrer">aoguerbe led strip lights</a> from web browsers and telegram.</p>
         </Project>
         <Project
           title='motionctl'
           href={GITHUB_URL + "motionctl"}
-          techStack={['Python', 'Flask', 'HTML', 'Javascript', 'CSS']}
+          techStack={['Python', 'HTML', 'Javascript', 'CSS']}
         >
           <p><a href={MOTION_PROJECT_URL} target="_blank" rel="noreferrer">Motion</a> is a lightweight program that allows you to create a camera server from, for instance, a Raspberry Pi.
           By default it also stores videos when it detects something moving, but its web interface does not allow you to watch these videos.<br/>
