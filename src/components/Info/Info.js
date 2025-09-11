@@ -20,9 +20,9 @@ export default function Info() {
                 </RevealAnimation>
                 <RevealAnimation animationClass="reveal-text-reverse reveal-text-p">
                 <p>
-                  I am Luigi Fanuzzi, an engineering student with the passion for IT and CyberSecurity.
+                  I am Luigi Fanuzzi, an engineering student with a passion for IT and CyberSecurity.
                 <br/>
-                  I am {age} years old and at the moment I am attending the second bachelor year at{" "}
+                  Currently, I am studying in the third year of the Bachelor's degree Electronics and ICT Engineering Technology at{" "}
                   <a href={KULEUVEN_URL} target="_blank" rel="noreferrer">
                     KU Leuven Group T campus
                   </a>
