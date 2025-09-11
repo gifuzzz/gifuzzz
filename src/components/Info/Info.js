@@ -6,8 +6,6 @@ import Whatiknow from "./Whatiknow";
 import { KULEUVEN_URL } from '../../utils/consts';
 
 export default function Info() {
-  const age = parseInt(new Date(Date.now()-new Date('2004-07-05'))/ (1000 * 3600 * 24 * 365))
-
   return (
     <section id="info" className="center">
         <div>
