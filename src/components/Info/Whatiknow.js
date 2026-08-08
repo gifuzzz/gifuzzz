@@ -1,6 +1,6 @@
 import React from 'react';
 import RevealAnimation from '../../utils/RevealAnimation';
-import { FaLinux, FaPython, FaHtml5, FaCss3, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaDocker, FaDatabase, FaSitemap, FaRobot, FaMicrochip, FaRaspberryPi, FaVuejs, FaBrain } from 'react-icons/fa'
+import { FaLinux, FaPython, FaHtml5, FaCss3, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaDocker, FaDatabase, FaSitemap, FaRobot, FaMicrochip, FaRaspberryPi, FaBrain } from 'react-icons/fa'
 
 export default function Whatiknow() {
   return (

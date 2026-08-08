@@ -1,7 +1,7 @@
 import React from 'react';
 import RevealAnimation from '../../utils/RevealAnimation';
 import './Projects.css'
-import { GITHUB_URL, LIGHTS_URL, MOTION_PROJECT_URL, URLHIDE_URL } from '../../utils/consts';
+import { GITHUB_URL } from '../../utils/consts';
 import Project from './Project'
 
 export default function Projects() {
