@@ -32,8 +32,7 @@ export default function Whatiknow() {
             <li><FaMicrochip/>  C (for Arduino) - The basic for programming with Arduino.</li>
             <li><FaSitemap/>  MQTT - IoT event management.</li>
             <li><FaRaspberryPi/>  Cloud with Raspberry - To have an external server to host websites and different projects.</li>
-            <li><FaVuejs/>  VueJS - Still learning...</li>
-            <li><FaBrain/>  Deep learning with Python - Still learning...</li>
+            <li><FaBrain/>  Machine learning with Python - Studied theory and practice during my bachelor's degree.</li>
           </ul>
         </RevealAnimation>
       </div>

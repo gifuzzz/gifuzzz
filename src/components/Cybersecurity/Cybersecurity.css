@@ -1,3 +1,15 @@
+#cybersecurity-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #cybersecurity-list {
+        grid-template-columns: 1fr;
+    }
+}
+
 blockquote p {
     font-size: 16px;
 }

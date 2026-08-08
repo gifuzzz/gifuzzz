@@ -1,9 +1,9 @@
 import React from "react";
 import { IoMail } from 'react-icons/io5'
 import { RiInstagramFill } from 'react-icons/ri'
-import { BsTelegram, BsGithub } from 'react-icons/bs'
+import { BsTelegram, BsGithub, BsLinkedin } from 'react-icons/bs'
 import './Footer.css';
-import { GITHUB_REPO_URL, GITHUB_URL, INSTAGRAM_URL, MAIL_URL, TELEGRAM_URL } from "../../utils/consts";
+import { GITHUB_REPO_URL, LINKEDIN_URL, GITHUB_URL, INSTAGRAM_URL, MAIL_URL, TELEGRAM_URL } from "../../utils/consts";
 
 export default function Footer() {
   return (
@@ -11,6 +11,9 @@ export default function Footer() {
       <div className="social">
         <a className="icon" target="_blank" rel="noreferrer" href={MAIL_URL}>
           <IoMail />
+        </a>
+        <a className="icon" target="_blank" rel="noreferrer" href={LINKEDIN_URL}>
+          <BsLinkedin />
         </a>
         <a className="icon" target="_blank" rel="noreferrer" href={GITHUB_URL}>
           <BsGithub />

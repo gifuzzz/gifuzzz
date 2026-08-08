@@ -34,10 +34,10 @@ export default function Contact() {
   return (
     <section id="contact">
       <RevealAnimation animationClass="reveal-text margin-auto">
-        <h1 className="title">Contact</h1>
+        <h1 className="title">Get In Touch</h1>
       </RevealAnimation>
       <RevealAnimation animationClass="reveal-text-reverse reveal-text-p margin-auto">
-        <p>You can get in touch with me via the links at the end of the page, or you can just use this form.</p>
+        <p>Have a question or interested in collaborating? Send me a message below:</p>
       </RevealAnimation>
       <RevealAnimation animationClass='fade-in'>
         <form className="margin-auto" onSubmit={send}>

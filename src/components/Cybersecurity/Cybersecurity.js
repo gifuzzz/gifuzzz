@@ -1,7 +1,8 @@
 import React from 'react';
 import RevealAnimation from '../../utils/RevealAnimation';
 import './Cybersecurity.css'
-import { CARONTE_URL, CYBERCHALLENGE_URL, DESTRUCTIVEFARM_URL, OLICYBER_URL, POLIBA_URL } from '../../utils/consts';
+import { CSCBE_URL, CYBERCHALLENGE_URL, OLICYBER_URL, POLIBA_URL } from '../../utils/consts';
+import Project from '../Projects/Project';
 
 export default function Cybersecurity() {
   return (
@@ -11,63 +12,18 @@ export default function Cybersecurity() {
           <h1>Cybersecurity</h1>
         </RevealAnimation>
         <RevealAnimation animationClass="reveal-text-reverse reveal-text-p">
-          <p>
-            I started to learn Ethical Hacking and CyberSecurity online, thanks to Udemy.<br/>
-            I took part in the <a href={CYBERCHALLENGE_URL} target="_blank" rel="noreferrer">CyberChallenge</a> and <a href={OLICYBER_URL} target="_blank" rel="noreferrer">Olicyber</a> 2021 competitions, which helped me a lot in my cybersecurity learning path.
-          </p>
+          <p>Competitive ethical hacking achievements across Jeopardy & Attack/Defense CTFs and national security competitions:</p>
         </RevealAnimation>
-        <div id='ccit'>
-          <RevealAnimation animationClass="reveal-text">
-            <h2>CyberChallenge 2021</h2>
-          </RevealAnimation>
-          <RevealAnimation animationClass='fade-in'>
-            <figure>
-              <blockquote>
-                <p>
-                  CyberChallenge.IT, a training program for young talents between 16 and 23, is the main Italian initiative to identify, attract, recruit and place the next generation of cybersecurity professionals.
-                </p>
-              </blockquote>
-              <figcaption className="blockquote-footer">Source: <a href={CYBERCHALLENGE_URL + 'about'} target="_blank" rel="noreferrer">cyberchallenge.it</a></figcaption>
-            </figure>
-          </RevealAnimation>
-          <RevealAnimation animationClass="reveal-text reveal-text-p">
-            <p>
-              After successfully passing both logic and programming tests, and several month of training at the <a href={POLIBA_URL} target="_blank" rel="noreferrer">Bari's Polytechnic University</a>, we had a local Jeopardy-style CTF in which we had to use all of our knowledge to solve challenges of any kind.
-              I managed to get the first position, with which I won the first-classified plate, and became the leader of the team for the National Attack/Defence-style CTF.
-            </p>
-          </RevealAnimation>
-          <RevealAnimation animationClass="reveal-text-reverse reveal-text-p">
-            <p>
-              I and my team learned some really useful tools such as <a href={CARONTE_URL} target="_blank" rel="noreferrer">caronte</a> or <a href={DESTRUCTIVEFARM_URL} target="_blank" rel="noreferrer">DestructiveFarm</a>, and finally on the 7th of July we gave our best.<br/>
-              We eventually finished on the 6th position out of a total of 33 teams from all over the country.
-            </p>
-          </RevealAnimation>
-          <RevealAnimation animationClass="reveal-text-reverse reveal-text-p">
-            <p>
-              Thanks to this big experience I also developed strong communication and teamworking skills.
-            </p>
-          </RevealAnimation>
-        </div>
-        <div id='olic'>
-          <RevealAnimation animationClass="reveal-text">
-            <h2>OliCyber 2021</h2>
-          </RevealAnimation>
-          <RevealAnimation animationClass='fade-in'>
-            <figure>
-              <blockquote>
-                <p>
-                  OliCyber is the program for the enhancement of excellence in cybersecurity, organized by the National Cybersecurity Laboratory of CINI (National Interuniversity Consortium for Informatics) aimed at encouraging and encouraging students from Italian secondary schools to approach IT security both in key to personal awareness and to help the most talented young people to orient themselves in the market of the sector.
-                </p>
-              </blockquote>
-              <figcaption className="blockquote-footer">Source: <a href={OLICYBER_URL} target="_blank" rel="noreferrer">olicyber.it</a></figcaption>
-            </figure>
-          </RevealAnimation>
-          <RevealAnimation animationClass="reveal-text reveal-text-p">
-            <p>
-              Since I passed the tests for CyberChallenge, I was already subscribed in the OliCyber program.<br/>
-              After the big Jeopardy-style CTF, I got the 19th position out of more than 150 students, winning a bronze medal.
-            </p>
-          </RevealAnimation>
+        <div id="cybersecurity-list">
+          <Project title='Cyber Security Challenge Belgium 2026' href={CSCBE_URL}>
+            <p>Achieved 2nd place in the web category of the qualifying CTF, I was invited to the finals.</p>
+          </Project>
+          <Project title='CyberChallenge 2021' href={CYBERCHALLENGE_URL}>
+            <p>Achieved 1st place in the local Jeopardy CTF at <a href={POLIBA_URL} target="_blank" rel="noreferrer">Polytechnic University of Bari</a> and captained the team to 6th place nationally in the 24-hour Attack/Defense CTF using security tools like Caronte and DestructiveFarm.</p>
+          </Project>
+          <Project title='OliCyber 2021' href={OLICYBER_URL}>
+            <p>Awarded Bronze Medal at the National Italian Olympiads in Cybersecurity (CINI Lab) after placing 19th out of 150+ top national qualifiers.</p>
+          </Project>
         </div>
       </div>
     </section>

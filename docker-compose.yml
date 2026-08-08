@@ -1,0 +1,43 @@
+services:
+  # Development container with hot reloading
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    container_name: gifuzzz-dev
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.cache
+      - /app/public
+    environment:
+      - NODE_ENV=development
+
+  # Build container (compiles static site into local ./public directory)
+  build:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: builder
+    container_name: gifuzzz-build
+    volumes:
+      - ./public:/app/public
+    environment:
+      - NODE_ENV=production
+
+  # Serve container (serves built static site on port 9000)
+  serve:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: server
+    container_name: gifuzzz-serve
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./public:/app/public
+    environment:
+      - NODE_ENV=production

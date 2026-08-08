@@ -11,23 +11,17 @@ export default function Info() {
         <div>
           <div className="whoami">
             <Whoami />
-              <RevealAnimation animationClass="reveal-text reveal-text-p">
-                <p>
-                  First, welcome to my website! I made this in order to have a personal portfolio with some information about me, and activities or projects in which I take part.<br/>
-                </p>
-                </RevealAnimation>
-                <RevealAnimation animationClass="reveal-text-reverse reveal-text-p">
-                <p>
-                  I am Luigi Fanuzzi, an engineering student with a passion for IT and CyberSecurity.
-                <br/>
-                  Currently, I am studying in the third year of the Bachelor's degree Electronics and ICT Engineering Technology at{" "}
-                  <a href={KULEUVEN_URL} target="_blank" rel="noreferrer">
-                    KU Leuven Group T campus
-                  </a>
-                  .
-                </p>
-              </RevealAnimation>
-            </div>
+            <RevealAnimation animationClass="reveal-text-reverse reveal-text-p">
+              <p>
+                I am Luigi Fanuzzi, an Electronics & ICT Engineering student, with a passion for CyberSecurity and AI.
+                Currently, I am pursuing my Master's degree (MSc) in Electronics and ICT Engineering Technology at{" "}
+                <a href={KULEUVEN_URL} target="_blank" rel="noreferrer">
+                  KU Leuven
+                </a>
+                .
+              </p>
+            </RevealAnimation>
+          </div>
           <Whatiknow />
         </div>
       </section>
